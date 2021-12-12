@@ -1,0 +1,23 @@
+{
+  "name": "ep-do-leitao",
+  "packageManager": "yarn@3.1.1",
+  "description": "EP de numérico terror dos politécnicos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "jest": "^27.4.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phpc91/ep-do-leitao.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phpc91/ep-do-leitao/issues"
+  },
+  "homepage": "https://github.com/phpc91/ep-do-leitao#readme"
+}
