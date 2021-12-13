@@ -12,30 +12,32 @@ def int_dupla_gauss(a, b, n):
         aux = n10.copy()
 
     # Parâmetro iniciais, ajuste do intervalo de integração para [-1,1]
-    h1 = (b-a)/2
-    h2 = (b+a) / 2
-    J = 0
+    h1 = (b-a)/2  # pra a=-1 e b=1, 1
+    h2 = (b+a) / 2  # 0
+    J = 0  # resultado final
     m = n
     # Primeiro laço, integração em x
     for i in range(1, m+1):
         # Inicializa o valor inicial da variável auxiliar da integral
+        # resultado da de dentro
         JX = 0
         # obtém o valor da raíz xj ajustada ao intervalo
-        x = h1*aux.get(i)[0]+h2
+        x = h1*aux.get(i)[0]+h2  # x=x[i] //da tabela
         # limites inferior e superior da integral em y, prepara para integrar em y
-        c1 = c(x)
-        d1 = d(x)
-        k1 = (d1-c1) / 2
-        k2 = (d1+c1) / 2
+        c1 = c(x)  # 0
+        d1 = d(x)  # 1 - x[i]^2
+        k1 = (d1-c1) / 2  # ?
+        k2 = (d1+c1) / 2  # ?
         # Segundo laço para cada valor de x obtido acima, integra-se para todos os y do intevalo de integração
         for j in range(1, n+1):
             # obtém o valor da raíz xj ajustada ao intervalo
-            y = k1*aux.get(j)[0]+k2
+            y = k1*aux.get(j)[0]+k2  # numero
             # calcula o valor da f nas razes obtidas acima
-            Q = f(x, y)
+            Q = f(x, y)  # f(x[i], numero)
             # Armazena o valor parcial da integral
             J = JX + aux.get(j)[1]*Q
-            J = J + aux.get(i)[1] * k1 * JX
+
+        J = J + aux.get(i)[1] * k1 * JX
     # Devolve o valor da aproximação calculada
     J = h1*J
     print("Para n="+str(n) + " Valor da integral:"+str(J))

@@ -1,0 +1,1 @@
+// executar para n = 6,8 e 10 cada exemplo
