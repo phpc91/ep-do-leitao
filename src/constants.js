@@ -1,4 +1,4 @@
-export const GAUSS_CONSTANTS = {
+module.exports.GAUSS_CONSTANTS = {
   n6: {
     x: [ // nós
       -0.9324695142031520278123016,
@@ -66,5 +66,3 @@ export const GAUSS_CONSTANTS = {
     ],
   }
 }
-
-export const 

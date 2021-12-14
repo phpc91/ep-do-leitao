@@ -8,7 +8,8 @@
     "jest": "^27.4.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/quadratura_gauss.js",
+    "test": "node --inspect-brk src/quadratura_gauss.js"
   },
   "repository": {
     "type": "git",
