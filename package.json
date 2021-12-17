@@ -5,11 +5,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
+    "@types/jest": "^27.0.3",
     "jest": "^27.4.4"
   },
   "scripts": {
     "start": "node src/quadratura_gauss.js",
-    "test": "node --inspect-brk src/quadratura_gauss.js"
+    "debug": "node --inspect-brk src/quadratura_gauss.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
