@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "node src/quadratura_gauss.js",
-    "debug": "node --inspect-brk src/quadratura_gauss.js",
+    "debug": "node --inspect-brk src/integral_dupla_gl.js",
     "test": "jest"
   },
   "repository": {

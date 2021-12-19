@@ -52,6 +52,7 @@ function integral_gl({
     pontos_a_percorrer[j] = pontos_a_percorrer[j - 1] + largura_passo
   }
 
+  // metodo
   for (let i = 0; i < num_subintervalos; i++) {
     const q_1 = (pontos_a_percorrer[i + 1] - pontos_a_percorrer[i]) / 2
     const q_2 = (pontos_a_percorrer[i + 1] + pontos_a_percorrer[i]) / 2
