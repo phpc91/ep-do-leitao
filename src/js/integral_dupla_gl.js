@@ -115,7 +115,6 @@ function nossa_integral_dupla({
     const qx_1 = (b - a) / 2
     const qx_2 = (b + a) / 2
     const x_i = qx_1 * raizes[i] + qx_2 // ajuste de variaveis
-    // console.log({ x_i, 'raiz': raizes[i] })
 
     if (typeof ponto_c_ou_funcao_de_x === 'function') c = ponto_c_ou_funcao_de_x(x_i)
     if (typeof ponto_d_ou_funcao_de_x === 'function') d = ponto_d_ou_funcao_de_x(x_i)
@@ -128,19 +127,12 @@ function nossa_integral_dupla({
       const B_j = coeficientes[j]
       const y_j = qy_1 * raizes[j] + qy_2 // ajuste de variaveis
       const resultado_funcao = funcao_a_integrar(x_i, y_j)
-      // console.log({ y_j, 'raiz': raizes[j], resultado_funcao })
       soma_y += B_j * resultado_funcao
-      // console.log({ soma_y })
     }
 
     soma_x_y += A_i * soma_y * (d - c) * 0.5
-    // console.log({ soma_x_y })
   }
 
-  // if (typeof ponto_c_ou_funcao_de_x === 'function') c = ponto_c_ou_funcao_de_x(a)
-  // if (typeof ponto_d_ou_funcao_de_x === 'function') d = ponto_d_ou_funcao_de_x(b)
-
-  // console.log({ '1': (b - a), '2': (d - c), soma_x_y })
   const integral_dupla = 0.5 * (b - a) * soma_x_y
   console.log(integral_dupla)
   return integral_dupla

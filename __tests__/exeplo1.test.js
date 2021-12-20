@@ -2,15 +2,15 @@ const {
   x_ao_quadrado,
   exemplo_pdf_aula,
   exemplo_3_2_tcc_ariel,
-} = require('../src/funcoes')
+} = require('../src/js/funcoes')
 const {
   integral_gl,
 } = require('../src/integral_gl')
 const {
   integral_dupla_gl,
   nossa_integral_dupla,
-} = require('../src/integral_dupla_gl')
-const { GAUSS_CONSTANTS } = require('../src/constantes')
+} = require('../src/js/integral_dupla_gl')
+const { GAUSS_CONSTANTS } = require('../src/js/constantes')
 
 describe('todos os testes', () => {
   test('integral de x^2 entre [0,2], com 8 subintervalos', () => {
