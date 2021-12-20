@@ -11,9 +11,14 @@ def y_2_log10_3x(x, y):
     return y * y * math.log10(3 * x)
 
 
-def limite_superior_y_1(x):
-    "limite superior de y no exemplo 1"
+def limite_superior_y_1_1(x):
+    "limite superior de y no exemplo 1.1"
     return x
+
+
+def limite_superior_y_1_2(x):
+    "limite superior de y no exemplo 1.2"
+    return 1 - x
 
 
 def primitiva_do_cubo(x, y):

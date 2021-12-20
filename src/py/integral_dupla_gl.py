@@ -1,7 +1,3 @@
-import constantes
-import funcoes
-
-
 def integral_dupla_gauss_legendre(
     ax,
     bx,
@@ -59,16 +55,3 @@ def integral_dupla_gauss_legendre(
     # resultado final é soma_x_y * correção da troca de variável
     integral_dupla = soma_x_y * (b - a) / 2
     return integral_dupla
-
-
-print(integral_dupla_gauss_legendre(
-    0,
-    1,
-    0,
-    funcoes.limite_superior_y_1,
-    constantes.LEGENDRE.get('grau3').get('pesos'),
-    constantes.LEGENDRE.get('grau3').get('nos'),
-    constantes.LEGENDRE.get('grau3').get('pesos'),
-    constantes.LEGENDRE.get('grau3').get('nos'),
-    funcoes.primitiva_do_cubo,
-))

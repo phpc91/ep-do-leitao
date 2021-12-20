@@ -16,7 +16,7 @@ def init():
     print("4) Volume de sólido de revolução")
 
     numero_exemplo = input(
-        "Qual exemplo gostaria de executar? (1.1/1.2/2/3.1/3.2/4) ")
+        "Qual exemplo gostaria de executar? (1.1/1.2/2.1/2.2/3.1/3.2/4) ")
 
     graus_diferentes = False
     nx_diferente_ny = input(
@@ -79,7 +79,7 @@ def init():
         b = 1
         c = 0
         c_texto = c
-        d = funcoes.limite_superior_y_1
+        d = funcoes.limite_superior_y_1_1
         d_texto = 'x'
         funcao_a_integrar = funcoes.primitiva_do_cubo
 
@@ -88,7 +88,7 @@ def init():
         b = 1
         c = 0
         c_texto = c
-        d = funcoes.limite_superior_y_1
+        d = funcoes.limite_superior_y_1_2
         d_texto = 'x'
         funcao_a_integrar = funcoes.primitiva_do_tetraedro
 
@@ -106,8 +106,8 @@ def init():
         b = 1
         c = 0
         c_texto = c
-        d = funcoes.limite_superior_y_2_1
-        d_texto = '1 - x^2'
+        d = funcoes.limite_superior_y_2_2
+        d_texto = 'srqt(1 - y)'
         funcao_a_integrar = funcoes.primitiva_exemplo_2
 
     elif (numero_exemplo == '3.1'):
@@ -127,6 +127,10 @@ def init():
         d = funcoes.limite_superior_y_3
         d_texto = 'x^2'
         funcao_a_integrar = funcoes.volume_exemplo_3
+
+    elif (numero_exemplo == '4'):
+        print("\nNão implementado :( \n")
+        return
 
     print("\n\nExecutando Integral dupla de GL")
     print("Exemplo ", numero_exemplo)

@@ -1,1 +1,5 @@
-// instruções de compilação e execução, indicando bibliotecas usadas: math
+Instruções gerais:
+  Esse programa requer ```python3``` instalado globalmente. Para executá-lo, use:
+    ```python3 __init__.py```
+
+  Foi utilizada apenas a biblioteca nativa ```math``` de Python.
