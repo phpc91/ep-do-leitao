@@ -1,3 +1,9 @@
+"""
+Aluno: Pedro Gabriel Padilha Gandara Mendes
+NUSP: 7627714
+"""
+
+
 def integral_dupla_gauss_legendre(
     ax,
     bx,

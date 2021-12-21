@@ -1,3 +1,8 @@
+"""
+Aluno: Pedro Gabriel Padilha Gandara Mendes
+NUSP: 7627714
+"""
+
 import math
 
 

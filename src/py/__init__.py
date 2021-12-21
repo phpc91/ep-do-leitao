@@ -1,3 +1,8 @@
+"""
+Aluno: Pedro Gabriel Padilha Gandara Mendes
+NUSP: 7627714
+"""
+
 import constantes
 import funcoes
 from integral_dupla_gl import integral_dupla_gauss_legendre
